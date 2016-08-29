@@ -24,7 +24,7 @@ public class Day24 {
 					prevNode.next = start.next;
 					start = start.next;
 				} else {
-					if(start.data== prevNode.data){
+					if (start.data == prevNode.data) {
 						prevNode.next = null;
 					}
 					start = null;
@@ -74,6 +74,6 @@ public class Day24 {
 		}
 		head = removeDuplicates(head);
 		display(head);
-
+		sc.close();
 	}
 }
